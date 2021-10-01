@@ -16,7 +16,7 @@ class Phone{
         return p_number;
     }
 }
-public class PhoneBook {
+public class Q8{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num;

@@ -17,33 +17,30 @@ class Circle{
         return radius*radius >= c.radius*c.radius;
     }
 }
-public class CircleManager {
+public class Q6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Circle c [] = new Circle[3];
-        for (int i=0;i<c.length;i++){
+        Circle c[] = new Circle[3];
+        for (int i = 0; i < c.length; i++) {
             System.out.print("x, y, radius >>");
             double x = scanner.nextDouble();
             double y = scanner.nextDouble();
             int radius = scanner.nextInt();
-            c[i] = new Circle(x,y,radius);
+            c[i] = new Circle(x, y, radius);
         }
-        if(c[0].compare(c[1])){
-            if(c[0].compare(c[2])){
+        if (c[0].compare(c[1])) {
+            if (c[0].compare(c[2])) {
                 System.out.print("가장 면적이 큰 원은 ");
                 c[0].show();
-            }
-            else{
+            } else {
                 System.out.print("가장 면적이 큰 원은 ");
                 c[2].show();
             }
-        }
-        else{
-            if(c[1].compare(c[2])){
+        } else {
+            if (c[1].compare(c[2])) {
                 System.out.print("가장 면적이 큰 원은 ");
                 c[1].show();
-            }
-            else{
+            } else {
                 System.out.print("가장 면적이 큰 원은 ");
                 c[2].show();
             }
