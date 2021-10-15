@@ -1,7 +1,5 @@
 package chap05.examples;
 
-import java.awt.*;
-
 class Point {
     private int x, y; //한 점을 구성하는 x,y 좌표
     public void set(int x, int y){
